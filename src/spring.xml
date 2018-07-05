@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="triangle" class="org.sunny.anand.Triangle">
+        <!-- <property name="type" value="Equilateral"/>   injection using setter and property tag-->
+        <constructor-arg index="0" type="java.lang.String"
+                         value="Equilateral"/> <!-- injection using constructor and constructor-arg tags-->
+    </bean>
+</beans>
